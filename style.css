@@ -2,6 +2,8 @@
   --preto: black;
   --branco: white;
   --cinza: rgb(199, 199, 199);
+  --verde: rgb(0, 153, 0);
+  --verde2: rgb(52, 185, 52);
 }
 * {
   margin: 0%;
@@ -18,6 +20,12 @@ header {
   padding: 1%;
   position: fixed;
   width: 100%;
+}
+footer {
+  text-align: center;
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 1%;
 }
 body {
   background-color: var(--cinza);
@@ -110,3 +118,19 @@ aside {
     text-align: center;
     padding: 2px;
 }
+button {
+    padding: 8px 20px 8px 20px;
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease;
+  }
+  button:hover {
+    background-color: var(--verde2);
+    text-shadow: 1px 1px 2px var(--preto);
+    cursor: pointer;
+  }
